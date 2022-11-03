@@ -29,13 +29,13 @@ echo '4. Quit'.PHP_EOL;
 $choice=readline('Enter your choice (1-4): ');
 if ($choice==1){
     $circleR=new geometry();
-    echo 'Your circle area is '.$circleR->areaCircle(readline('enter circle R: '));
+    echo 'Area of your circle is '.$circleR->areaCircle(readline('enter circle R: '));
 }else if ($choice==2){
     $rectangle=new geometry();
-    echo 'Your rectangle area is '.$rectangle->areaRectangle(readline('enter rectangle length: '),readline('enter rectangle width: '));
+    echo 'Area of your rectangle is '.$rectangle->areaRectangle(readline('enter rectangle length: '),readline('enter rectangle width: '));
 }else if ($choice==3){
     $triangle=new geometry();
-    echo 'Your triangle area is '.$triangle->areaTriangle(readline('enter triangle base: '),readline('enter triangle height: '));
+    echo 'Area of your triangle is '.$triangle->areaTriangle(readline('enter triangle base: '),readline('enter triangle height: '));
 }else if ($choice==4){
     exit('BYE'.PHP_EOL);
 }else{

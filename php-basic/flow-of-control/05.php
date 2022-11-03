@@ -92,6 +92,8 @@ foreach ($letters as $letter){
         case 'Z':
             $keypadSequence=$keypadSequence. 9999 .' ';
             break;
+        default:
+            echo "'$letter' is not on keypad";
     }
 }
 echo $keypadSequence.PHP_EOL;
