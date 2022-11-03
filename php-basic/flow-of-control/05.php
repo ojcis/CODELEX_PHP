@@ -93,7 +93,7 @@ foreach ($letters as $letter){
             $keypadSequence=$keypadSequence. 9999 .' ';
             break;
         default:
-            echo "'$letter' is not on keypad";
+            echo "This simbol '$letter' is not on keypad";
     }
 }
 echo $keypadSequence.PHP_EOL;
