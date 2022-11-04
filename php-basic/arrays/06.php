@@ -6,6 +6,7 @@ It must give them limited tries and stop after they run out.
 It must display letters they have already guessed (either only the incorrect guesses or all guesses).
  */
 $words=['carrot','tomato','potato','cucumber','cabbage'];
+START:
 $word=str_split($words[array_rand($words)]);
 $guessWord=[];
 for ($i=0;$i<count($word);$i++){
@@ -26,8 +27,20 @@ for ($i=0;$i<count($word)+5;$i++){
     if (implode('',$guessWord)==implode('',$word)){
         echo implode('',$guessWord),PHP_EOL;
         echo 'URAAA!'.PHP_EOL;
-        exit;
+        echo 'play again?[y/n]'.PHP_EOL;
+        $again=readline();
+        if ($again=='y'){
+            goto START;
+        }else {
+            exit;
+        }
     }
 }
 echo 'YOU LOST! Correct word was '.implode('',$word);
-
+echo 'play again?[y/n]'.PHP_EOL;
+$again=readline();
+if ($again=='y'){
+    goto START;
+}else {
+    exit;
+}
