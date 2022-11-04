@@ -1,10 +1,10 @@
 <?php
 $symbolsChancesValues=
     [
-        $a=['!',4,5],
-        $b=['*',2,100],
-        $c=['$',1,500],
-        $d=['7',3,10]
+        ['!',4,5],
+        ['*',2,100],
+        ['$',1,500],
+        ['7',3,10]
     ];//here you can change/add symbols, chance and value
 $lines=[
     [[0,0],[0,1],[0,2],[0,3],[0,4]],
