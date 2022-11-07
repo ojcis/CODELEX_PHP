@@ -1,5 +1,5 @@
 <?php
-class point{
+class Point{
     public $x;
     public $y;
     function __construct(int $x, int $y){

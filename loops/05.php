@@ -6,7 +6,7 @@ while ($end=='y') {
     if ($diceRoll == 1) {
         echo 'You rolled a 1!' . PHP_EOL;
         $score = 0;
-        $end='n';
+        break;
     } else {
         echo "you rolled a $diceRoll!" . PHP_EOL;
         $score=$score+$diceRoll;

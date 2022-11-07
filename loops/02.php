@@ -4,7 +4,7 @@ $n=readline('enter n value: ');
 $i=readline('enter i value: ');
 $result=1;
 for ($j=0;$j<$n;$j++){
-    $result=$result*$i;
+    $result *= $i;
 }
 echo $result.PHP_EOL;
 
