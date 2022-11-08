@@ -1,11 +1,15 @@
 <?php
-class Point{
+class Point
+{
     public $x;
     public $y;
-    function __construct(int $x, int $y){
+
+    function __construct(int $x, int $y)
+    {
         $this->x=$x;
         $this->y=$y;
     }
+
     function swapPoints(object $p1,object $p2){
         $x=$p1->x;
         $p1->x=$p2->x;
@@ -15,6 +19,7 @@ class Point{
         $p2->y=$y;
     }
 }
+
 $p1=new point(5,2);
 $p2=new point(-3,6);
 $p1->swapPoints($p1, $p2);

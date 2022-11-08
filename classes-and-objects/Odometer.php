@@ -1,5 +1,6 @@
 <?php
-class Odometer{
+class Odometer
+{
     private $mileage;
 
     public function __construct(int $mileage=0)
