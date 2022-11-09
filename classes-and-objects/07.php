@@ -1,10 +1,10 @@
 <?php
 class Dog
 {
-   private $name;
-   private $sex;
-   private $mother;
-   private $father;
+   private string $name;
+   private string $sex;
+   private ?Dog $mother;
+   private ?Dog $father;
 
    public function __construct(string $name, string $sex)
    {
@@ -12,7 +12,7 @@ class Dog
        $this->sex=$sex;
    }
 
-   public function setParents(object $father,object $mother)
+   public function setParents(Dog $father=null,Dog $mother=null)
    {
        $this->father=$father;
        $this->mother=$mother;
@@ -26,7 +26,7 @@ class Dog
        return $this->father->name;
    }
 
-   public function hasSameMother(object $dog2):bool{
+   public function hasSameMother(Dog $dog2):bool{
        return ($this->mother->name==$dog2->mother->name);
    }
 }

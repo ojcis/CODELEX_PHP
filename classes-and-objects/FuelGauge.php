@@ -1,7 +1,7 @@
 <?php
 class FuelGauge
 {
-    private $fuelAmount;
+    private int $fuelAmount;
 
     public function __construct(int $fuelAmount)
     {

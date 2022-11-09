@@ -8,7 +8,7 @@ $Buster=new Dog('Buster','male');
 $Sam=new Dog('Sam','male');
 $Lady=new Dog('Lady','female');
 $Molly=new Dog('Molly','female');
-$Coco=new Dog('Coco','famele');
+$Coco=new Dog('Coco','female');
 
 $Max->setParents($Rocky,$Lady);
 $Coco->setParents($Buster,$Molly);

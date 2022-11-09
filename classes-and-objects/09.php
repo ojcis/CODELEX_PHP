@@ -1,8 +1,8 @@
 <?php
 class BankAccount
 {
-    private $name;
-    private $balance;
+    private string $name;
+    private int $balance;
 
     public function __construct(string $name,int $balance)
     {

@@ -1,9 +1,9 @@
 <?php
 class Date
 {
-    private $month;
-    private $day;
-    private $year;
+    private int $month;
+    private int $day;
+    private int $year;
     public function __construct(int $month, int $day, int $year)
     {
         if ($month<1 || $month>12 || $day<1 || $day>31 || $year<0){

@@ -1,9 +1,9 @@
 <?php
 class Movie
 {
-    private $title;
-    private $studio;
-    private $rating;
+    private string $title;
+    private string $studio;
+    private string $rating;
 
     public function __construct(string $title, string $studio, string $rating)
     {
