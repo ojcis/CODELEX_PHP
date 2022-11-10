@@ -1,8 +1,8 @@
 <?php
 class SavingAccount
 {
-    private $annualInterestRate;
-    private $balance;
+    private float $annualInterestRate;
+    private float $balance;
 
     public function __construct(float $startingBalance, float $annualInterestRate)
     {

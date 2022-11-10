@@ -36,5 +36,5 @@ $movies=[
 $PGMovies=$Glass->GetPG($movies);
 echo 'PG rated movies is: '.PHP_EOL;
 foreach ($PGMovies as $PGMovie){
-    echo $PGMovie->Gettitle().PHP_EOL;
+    echo $PGMovie->Gettitle() . PHP_EOL;
 }

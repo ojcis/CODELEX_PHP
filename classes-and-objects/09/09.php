@@ -21,4 +21,4 @@ class BankAccount
     }
 }
 $test=new BankAccount('Jhon',-500);
-echo $test->show_user_name_and_balance().PHP_EOL;
+echo $test->show_user_name_and_balance() . PHP_EOL;
